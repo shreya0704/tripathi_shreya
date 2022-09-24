@@ -1,0 +1,102 @@
+#include <iostream>
+using namespace std;
+float fee_amount;
+float amount_paid;
+bool login()
+{
+    string login_id;
+    string login_password;
+    int success=0;
+    cout<<"enter login id: ";
+    cin>>login_id;
+    cout<<"enter login password: ";
+    cin>>login_password;
+    success=1;
+    if (success=1)
+    {
+        cout<<"login successful!!"<<endl;
+        return false;
+    }
+}
+bool payment()
+{
+    string user_id;
+    string user_password;
+    string otp;
+    string card_number;
+    int cvv;
+    int success=0;
+    cout<<"enter user id: ";
+    cin>>user_id;
+    cout<<"enter user password: ";
+    cin>>user_password;
+    cout<<"enter otp: ";
+    cin>>otp;
+    cout<<"enter fee payment(amount): ";
+    cin>>fee_amount;
+    cout<<"enter card number: ";
+    cin>>card_number;
+    cout<<"enter CVV: ";
+    cin>>cvv;
+    success=1;
+    if (success=1)
+    {
+        cout<<"Payment successful!!"<<endl;
+        cout<<"Amount paid: "<<fee_amount<<endl;
+        return true;
+    }
+    else
+    {
+        cout<<"Payment unsuccessful!!"<<endl;
+        return false;
+    }
+}
+bool semester_registration()
+{
+    string name;
+    int registration_no;
+    string sec;
+    string semester;
+    cout<<"enter your name: ";
+    cin>>name;
+    cout<<"enter your registration number: ";
+    cin>>registration_no;
+    cout<<"enter your section: ";
+    cin>>sec;
+    cout<<"enter your semester: ";
+    cin>>semester;
+    cout<<"enter the amount paid: ";
+    cin>>amount_paid;
+    if(amount_paid==fee_amount)
+    {
+        cout<<"Registration successful!!"<<endl;
+        return true;
+    }
+    else{
+        cout<<"Registration unsuccessful!!"<<endl;
+        return false;
+    }
+}
+void logout()
+{
+    int timer=0;
+    if(timer==0)
+    cout<<"logout successful!!"<<endl;
+    else
+    cout<<"time out!!"<<endl;
+}
+int main()
+{
+    bool blogin_success=login();
+    if(blogin_success==true)
+    {
+        bool bfee_payment=payment();
+        if(bfee_payment==true)
+        {
+            bool bsemester_registration=semester_registration();
+        }
+    }
+
+logout();
+return 0;
+}

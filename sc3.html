@@ -1,0 +1,144 @@
+<!--<html>
+    <script>
+        var a=10;
+        var b= 20;
+        var c= a+b;
+        document.write("the sum is : ",c);
+
+    </script>
+    </html>
+    
+
+    <html>
+        <script>
+            var a =20;
+            if(a%2==0){
+                document.write("a is even number");
+
+            }
+            else{
+                document.write("a is odd number");
+            }
+        </script>
+    </html>
+    
+
+    <html>
+        <script>
+            for (i=1;i<=5;i++)
+            {
+                document.write(i+"<br/");
+            }
+        </script>
+    </html>
+     
+
+   
+<html>
+    <head>
+        <title>Add Two Numbers</title>
+    <script>
+        var numOne = 10;
+        var numTwo = 20;
+        var sum = numOne+numTwo;
+        document.write("Sum = " + sum);
+    </script>
+    </head>
+
+</html>
+
+
+<html>
+    <script>
+        function numberSum(N) {
+  var total = 0;
+    for(var i = 1; i <= N; i++){
+      total += i;
+    }
+    return total;
+}
+
+function run(){
+  val = document.getElementById("val").value;
+  document.getElementById("results").innerHTML=val+": "+numberSum(val)
+  }
+<input id="val">
+<input type="Submit" onclick="run();">
+<p id="results"></p>
+    </script>
+</html>
+
+
+<html>
+    <body>
+        <script>
+            function msg(x){
+                document.write(x);
+            }
+        </script>
+
+        <input type="button" onclick="msg(25)" value="FUNCTION"/>
+    </body>
+</html>
+
+
+<html>
+    <head>
+    <script>
+        function show(){
+
+        var i, no, fact;
+        fact=1;
+        no=Number(document.getElementById("num").value);
+        for(i=1; i<=no; i++)  
+        {
+            fact= fact*i;
+        }  
+        document.getElementById("answer").value= fact;
+        }
+    </script>
+    </head>
+    <body>
+    Enter Num: <input id="num">
+    <button onclick="show()">Factorial</button>
+    <input id="answer">
+    </body>
+</html>
+
+
+<html>
+    <script>
+        var power;
+        power=new Funtion("num1","num2","return Math.pow(num1,num2)");
+
+        document.writeln(power(2,10));
+
+    </script>
+</html>
+
+
+<html>
+    <body>
+        <p id="demo" onclick="myFunc()">BEST INDIAN BATSMAN</p>
+
+        <script>
+            function myFunc(){
+                document.getElementById("demo").innerHTML = "M.S. Dhoni";
+            }
+        </script>
+    </body>
+</html>
+-->
+
+<html>
+    <body>
+        <p id="demo">CARS</p>
+
+        <script>
+
+            const cars =["Maruti ","Tesla ","BMW"];
+            document.getElementById("demo").innerHTML=cars;
+
+        </script>
+    </body>
+</html>

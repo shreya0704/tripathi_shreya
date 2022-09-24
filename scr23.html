@@ -1,0 +1,58 @@
+<html>
+   <style>
+        #box1{background:rgb(107, 140, 233);}
+        #box2{background: rgb(74, 74, 219);}
+        #box3{width: 370px;
+            padding: 20px;
+            border: 10px solid rgb(127, 102, 238);
+            margin: auto;}
+    </style>
+
+    <body>
+        <div id="box1" style="text-align: center;">
+            <h1 >SHREYA TRIPATHI</h1>
+
+            <h2>Registration no. 202000448</h2>
+            <label for="SEMESTER">Choose your semester:</label>
+
+            <select name="SEMESTER" id="semester">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            
+            </select>
+        </div>
+
+        <div id="box2" style="text-align: center;">
+            <img onmouseover="largePic(this)" onmouseout="normPic(this)"
+            img src="172219.jpg" alt="MY FAVOURITE PERSON" width="400" height="400" >
+            <script>
+                function largePic(x){
+                    x.style.width="412px";
+                    x.style.height="560px";
+                }        
+                function normPic(x){
+                    x.style.width="200px";
+                    x.style.height="244px";
+                }
+                </script>
+            <h3 id="demo" onmouseover="biggerSize(this)" onmouseout="normalSize(this)">ARMAAN MALIK</h3>
+            <script>
+                function biggerSize() {
+                  document.getElementById("demo").style.fontSize = "70";
+                }
+                
+                function normalSize() {
+                  document.getElementById("demo").style.fontSize = "40";
+                }
+                </script>
+
+        </div>
+
+        <div id="box3">
+            <h2>shreya_202000448@smit.smu.edu.in</h2>
+        </div>
+    </body>
+</html>
